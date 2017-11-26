@@ -18,14 +18,11 @@ console.log('Triangle field with base a: ' + a + ' and height h: ' + b + ' is eq
 
 var multiplicationResult = (a ** 2) - (2 * a * b) + (b ** 2);
 
-if (multiplicationResult > 0) {
-    console.log("Multiplication result is a plus it's " + multiplicationResult);
-} 
-else if (multiplicationResult < 0) {
-    console.log("Multiplication result is a minus it's " + multiplicationResult);
+if (multiplicationResult == 0) {
+    console.log('Two the same numbers were defined. Result equals zero.');
+} else  {
+    multiplicationResult > 0 ? console.log("Multiplication result is a plus it's " + multiplicationResult):console.log("Multiplication result is a minus it's " + multiplicationResult);
 }
-else {
-    console.log('Two same numbers were defined. Result equals zero.');
-}
+
 
 
